@@ -8,4 +8,4 @@
 - ./mbk.sh
 
 # Manual mbk
-- usage ./mbk.sh -i <folder input> -o <folder output>
+- usage ./mbk.sh -i "<folder input>" -o "<folder output>"

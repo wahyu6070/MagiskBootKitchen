@@ -17,6 +17,6 @@
 - Example2 : sh mbk.sh --input /sdcard --output /sdcard/music
 -
 # Credits
-- [topjohnwu](https://github.com/topjohnwu/Magisk)
-- [osm0sis](https://github.com/osm0sis/mkbootimg)
+- [topjohnwu](https://github.com/topjohnwu/Magisk) magisk
+- [osm0sis](https://github.com/osm0sis/mkbootimg) mkbootimg
 -

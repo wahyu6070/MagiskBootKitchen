@@ -4,8 +4,8 @@
 [telegram group](www.t.me/wahyu6070group)
 
 # Usage
-- git clone Magisk-Boot-Kitchen
-- cd Magisk-Boot-Kitchen
+- git clone https://github.com/Wahyu6070/MagiskBootKitchen/blob/master/README.md
+- cd MagiskBootKitchen
 - chmod 777 mbk.sh
 - ./mbk.sh
 

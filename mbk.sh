@@ -15,7 +15,6 @@ Android)  case $0 in
 gwt="$(dirname "$(readlink -f "$gwt")")";
 ;;
 esac		  
-echo "$gwt"
 
 chmod -R 777 "$gwt/bin"
 
@@ -55,7 +54,7 @@ case $3 in
 esac
 
 
-if [ $1 ] && [ ! -f $2 ]; then
+if [ $1 ] && [ -f $2 ]; then
 help
 elif [ $1 ] && [ -d $2 ] && [ $3 ] && [ ! -d $4 ]; then
 help
@@ -213,7 +212,7 @@ $bin/magiskboot repack "$bootimg" || abort "! Unable to repack boot image!"
 $CHROMEOS && sign_chromeos
 cp -f "$gwt/kernel" "$output" 2>/dev/null
 cp -f "$gwt/ramdisk.cpio" "$output/ramdisk.img" 2>/dev/null
-cp -f "$gwt/second $output/initrd.img" 2>/dev/null
+cp -f "$gwt/second" "$output/initrd.img" 2>/dev/null
 cp -f "$gwt/kernel_dtb" "$output" 2>/dev/null
 cp -f "$gwt/new-boot.img" "$output/boot_patched.img" 2>/dev/null
 rm -rf "$gwt/second" "$gwt/kernel_dtb" "$gwt/ramdisk.cpio" "$gwt/kernel" "$gwt/magisk" "$gwt/new-boot.img" "$gwt/config" 2>/dev/null

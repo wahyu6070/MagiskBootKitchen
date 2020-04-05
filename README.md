@@ -1,4 +1,4 @@
-# Magisk-Boot-Kitchen
+# Magisk Boot Kitchen
 - Magisk boot kitchen repack,unpack,patched magisk boot 
 # Informations
 [telegram group](www.t.me/wahyu6070group)

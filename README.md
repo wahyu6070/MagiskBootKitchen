@@ -1,5 +1,6 @@
 # Magisk Boot Kitchen
 - Magisk boot kitchen repack,unpack,patched magisk boot 
+- this is a tool to install magisk to boot.img, kernel, initrd, ramsidk.  the main purpose of this tool is to install magisk on android-x86 (pc). but you can use this on android (mobile)
 # Informations
 [telegram group](www.t.me/wahyu6070group)
 

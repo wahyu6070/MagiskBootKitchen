@@ -3,18 +3,7 @@
 #
 
 
-case $(uname -o) in
-Android)  case $0 in
-		   *.sh) gwt="$0";;
-	 	   *) gwt="$(lsof -p $$ 2>/dev/null | grep -o '/.*mbk.sh$')";;
-		  esac;
-		  gwt="$(dirname "$(readlink -f "$gwt")")";
-;;
-*)
-#gwt="${BASH_SOURCE:-$0}";
-gwt="$(dirname "$(readlink -f "$gwt")")";
-;;
-esac		  
+gwt="`dirname $(readlink -f "$0")`"
 
 chmod -R 777 "$gwt/bin"
 
